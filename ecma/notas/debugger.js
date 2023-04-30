@@ -1,9 +1,10 @@
-const arreglo = [10, 40, 30, 50];
+const student = { 
+  name: 'jose',
+  app: 'montoya',
+  apm: 'guzman' 
+};
 
-for (var i=0; i<arreglo.length; i++) {
-  debugger;
-  console.log(arreglo[i]);
-  console.log(i);
-  // con let se limite el scope de i
+for (const property in student) {
+  console.log('nombre de la propiedad: ', property);
+  console.log(`${student.[property]}`);
 }
-console.log('i: ', i); // ReferenceError: i is not defined
